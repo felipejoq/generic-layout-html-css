@@ -10,11 +10,11 @@ La maquetación a realiazar era en base al diseño de este Figma
 
 💻 **Para vista Desktop:**
 
-![Examen para Front-end I de CTD Desktop Preview](https://github.com/felipejoq/generic-layout-html-css/blob/main/desktop_preview_1440px?raw=true)
+![Examen para Front-end I de CTD Desktop Preview](https://raw.githubusercontent.com/felipejoq/generic-layout-html-css/main/desktop_preview_1440px.jpg)
 
 💻 **Para vista móvil:**
 
-![Examen para Front-end I de CTD Mobile Preview](https://github.com/felipejoq/generic-layout-html-css/blob/main/mobile_preview_480px?raw=true)
+![Examen para Front-end I de CTD Mobile Preview](https://raw.githubusercontent.com/felipejoq/generic-layout-html-css/main/mobile_preview_480px.jpg)
 
 #### Aun por mejorar:
 
