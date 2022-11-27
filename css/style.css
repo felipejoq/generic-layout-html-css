@@ -1,0 +1,561 @@
+/*  Frontend Exams
+    This exercise consist in generate a website layout from this figma design:
+        - https://www.figma.com/file/9vpyo8MNQzrZjleW2ZshuE/12-22-FE1?node-id=0%3A122&t=UcCaGu5My8APrGvL-0
+    
+    I have build this only using tools give me technologies how HTML and CSS
+    
+    Author: Felipe Jofré Quevedo
+    */
+
+/* Global Styles */
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Be Vietnam Pro", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 174px;
+}
+
+/* Fixed max and min width */
+.container {
+  max-width: 1440px;
+  min-width: 480px;
+}
+
+/* Header styles */
+.logo {
+  width: 108px;
+  height: 25px;
+}
+
+.navbar-top ul {
+  display: flex;
+}
+
+.navbar-top ul li {
+  list-style: none;
+  margin: 20px;
+}
+
+.navbar-top ul li a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 13px;
+  color: #242e52;
+}
+
+.navbar-top ul li a:hover {
+  color: rgba(36, 46, 82, 0.6);
+}
+
+/* Hidden my hamburguer options icon in desktop screen */
+.hamburguer-menu {
+  display: none;
+}
+
+/* This I named: "Jumbotron" how they use in bootstrap, similar element */
+.header-section {
+  display: flex;
+  justify-content: space-around;
+  height: 643px;
+  padding: 86px 70px;
+}
+
+.header-section img {
+  width: 540px;
+  height: 461px;
+}
+
+.header-section-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  width: 550px;
+  height: 461px;
+}
+
+.header-section-title h1,
+.header-section-title p {
+  text-align: right;
+  margin-bottom: 28px;
+}
+
+.header-section-title h1 {
+  font-weight: 700;
+  font-size: 50px;
+  color: #232c50;
+  line-height: 57px;
+}
+
+.header-section-title p {
+  font-weight: 500;
+  line-height: 26px;
+}
+
+/* Init my main section with content. This is title zone */
+.section-header-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  background-color: #8b48bf;
+  height: 168px;
+}
+
+.section-header-main h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 41px;
+  margin-right: 100px;
+}
+
+.section-header-main p {
+  font-weight: 500;
+  line-height: 25px;
+}
+
+.section-header-main h2,
+.section-header-main p {
+  width: 450px;
+}
+
+.section-benefist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #fafafa;
+}
+
+/* Benefist Cards, I dont know how say this section, then I named "benefist cards"  */
+.card-benefist {
+  width: 530px;
+  height: 162px;
+  margin: 30px 50px 30px 0px;
+}
+
+.title-card-benefist {
+  display: flex;
+  align-items: center;
+  color: #323851;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 23px;
+  margin-bottom: 10px;
+}
+
+.card-number-benefist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  width: 69px;
+  height: 43px;
+  margin-right: 20px;
+  background-color: #8b48bf;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.card-body-benefist {
+  margin-left: 90px;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.01em;
+  line-height: 26px;
+  color: #b3b2b7;
+}
+
+.best-of-the-month {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 100px 0px 120px;
+}
+
+.title-best-of-the-month {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 61px;
+  color: #242e53;
+  letter-spacing: -0.01em;
+}
+
+.container-cards-profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  margin: 100px 0px 62px 0px;
+}
+
+.card-profile {
+  width: 445px;
+  background-color: #fafafa;
+}
+
+.card-avatar-profile {
+  display: flex;
+  justify-content: center;
+  margin-top: -35px;
+  width: 100%;
+}
+
+.card-content-profile {
+  text-align: center;
+}
+
+.card-content-profile h3 {
+  color: #3f4868;
+  font-weight: 700;
+  line-height: 25px;
+  margin-top: 30px;
+}
+
+.card-content-profile p {
+  font-weight: 500;
+  line-height: 25px;
+  color: #b9b9c1;
+  margin: 20px;
+}
+
+/*  Label of best teams is a footer section in "Best of the month".
+    Is a box with button say "Go for it" */
+.label-best-teams {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 60px 0;
+  background-color: #8b48bf;
+  color: #ffffff;
+}
+
+.label-best-teams h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -0.005em;
+  width: 450px;
+}
+
+/* Footer section in columns it is manage with flex for positioned elements in row or columns. */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  color: #ffffff;
+  background-color: #1e1e26;
+  padding: 60px 100px;
+}
+
+.branding-footer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  height: 176px;
+  padding: 15px 0 0;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  font-size: 25px;
+  width: 100%;
+}
+
+.social-links i {
+  margin-right: 25px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+}
+
+.footer-links-column ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.footer-container li {
+  margin: 12px;
+}
+
+.footer-container li a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.fotter-form {
+  align-self: flex-start;
+}
+
+/* This it an styles for form and input email type element in footer section for subscribe */
+.input-email {
+  width: 201px;
+  height: 44px;
+  background: #ffffff;
+  border-radius: 50px;
+  border: none;
+  padding: 0 20px;
+  margin-right: 10px;
+}
+
+.input-email::placeholder {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 19px;
+  color: #a0a0a0;
+}
+
+/* Finally I edit styles for paragraph tag copyright in footer */
+.copyright {
+  display: flex;
+  justify-content: flex-end;
+  justify-self: flex-end;
+  width: 100%;
+}
+
+.copyright p {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  color: #8c8c94;
+}
+
+/* Custom globals Styles for button elements */
+.btn-normal {
+  background-color: #8b48bf;
+  border-radius: 50px;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* Button "lg" is a large button */
+.btn-normal-lg {
+  width: 134px;
+  height: 44px;
+}
+
+/* Button "sm" is a small button */
+.btn-normal-sm {
+  width: 63px;
+  height: 42px;
+}
+
+/* Button with background white and text purple */
+.btn-white {
+  background-color: #ffffff;
+  color: #8b48bf;
+}
+
+/*  This is a pseudo class with effect "hover"
+    this it detect event when cursor pointer is over element */
+.btn-normal-h:hover {
+  background-color: rgba(139, 72, 191, 0.7);
+}
+
+.btn-shadow {
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+}
+
+/*  Styles for small media screen.
+    When view port is equals or minor to width 480px it apply this styles */
+@media (max-width: 480px) {
+  header {
+    justify-content: space-between;
+    padding: 0 50px;
+  }
+
+  header button {
+    display: none;
+  }
+
+  .navbar-top {
+    display: none;
+  }
+
+  .hamburguer-menu {
+    display: block;
+  }
+
+  .hamburguer-menu a {
+    font-size: 40px;
+    color: #000000;
+    text-decoration: none;
+  }
+
+  .header-section {
+    flex-direction: column;
+    align-items: center;
+    height: 900px;
+    padding: 0px;
+  }
+
+  .header-section img {
+    width: 400px;
+    height: auto;
+  }
+
+  .header-section-title {
+    width: 400px;
+  }
+
+  .section-header-main {
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+    background-color: #3cddf3;
+    height: 306px;
+  }
+
+  .section-header-main h2 {
+    margin: 0 0 50px;
+  }
+
+  .section-benefist {
+    flex-direction: column;
+    padding: 65px 0 0;
+  }
+
+  .card-benefist {
+    width: 100%;
+    height: auto;
+    margin: 30px 0 32px;
+  }
+
+  .title-card-benefist {
+    background-color: rgba(139, 72, 191, 0.3);
+    margin-left: 55px;
+    margin-bottom: 45px;
+  }
+
+  .card-number-benefist {
+    margin-left: -15px;
+  }
+
+  .card-body-benefist {
+    margin: 0 0 0 55px;
+  }
+  .first-player,
+  .third-player {
+    display: none;
+  }
+
+  .label-best-teams {
+    flex-direction: column;
+    align-content: center;
+    padding: 60px 0;
+    background-color: #3cddf3;
+  }
+
+  .label-best-teams h2 {
+    width: 325px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .btn-blue {
+    background-color: #232c50;
+    color: #ffffff;
+  }
+
+  .footer-container {
+    flex-direction: column-reverse;
+    align-content: center;
+    padding: 60px 0 0 0;
+  }
+
+  .branding-footer {
+    flex-direction: column-reverse;
+    align-content: center;
+    height: 120px;
+    width: 480px;
+    order: 1;
+  }
+
+  .social-links {
+    justify-content: space-around;
+    padding: 0 50px;
+  }
+  .social-links i {
+    margin: 0;
+  }
+
+  .footer-links {
+    justify-content: space-around;
+    order: 2;
+    padding: 0 50px;
+  }
+
+  .footer-links-column ul {
+    width: 112px;
+  }
+
+  .footer-container li {
+    margin: 0 0 20px;
+  }
+
+  .footer-form {
+    justify-content: center;
+    align-items: center;
+    order: 4;
+    margin-bottom: 50px;
+    width: 100%;
+  }
+
+  .footer-form form {
+    display: flex;
+    justify-content: center;
+  }
+
+  .input-email {
+    width: 308px;
+  }
+
+  .copyright {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    order: 0;
+    margin: 45px 0 50px 0;
+  }
+
+  .copyright p {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    color: #8c8c94;
+  }
+}
