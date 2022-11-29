@@ -1,6 +1,6 @@
 /*  Frontend Exams
     This exercise consist in generate a website layout from this figma design:
-        - https://www.figma.com/file/9vpyo8MNQzrZjleW2ZshuE/12-22-FE1?node-id=0%3A122&t=UcCaGu5My8APrGvL-0
+      - https://www.figma.com/file/9vpyo8MNQzrZjleW2ZshuE/12-22-FE1?node-id=0%3A122&t=UcCaGu5My8APrGvL-0
     
     I have build this only using tools give me technologies how HTML and CSS
     
@@ -29,7 +29,7 @@ header {
   height: 174px;
 }
 
-/* Fixed max and min width */
+/* Fixed max and min width. ¡This is optional! */
 .container {
   max-width: 1440px;
   min-width: 480px;
@@ -66,7 +66,7 @@ header {
   display: none;
 }
 
-/* This I named: "Jumbotron" how they use in bootstrap, similar element */
+/* This I named: "Jumbotron" how they use in bootstrap, It's a similar element */
 .header-section {
   display: flex;
   justify-content: space-around;
@@ -374,8 +374,8 @@ header {
   height: 42px;
 }
 
-/* Button with background white and text purple */
-.btn-white {
+/* Button with background diferent or secondary and text purple */
+.btn-secondary {
   background-color: #ffffff;
   color: #8b48bf;
 }
