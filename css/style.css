@@ -29,7 +29,11 @@ header {
   height: 174px;
 }
 
-/* Fixed max and min width. ¡This is optional! */
+.flex {
+  display: flex;
+}
+
+/* Fixed max and min width. ¡This is optional! If you want remove this.. */
 .container {
   max-width: 1440px;
   min-width: 480px;
@@ -68,7 +72,6 @@ header {
 
 /* This I named: "Jumbotron" how they use in bootstrap, It's a similar element */
 .header-section {
-  display: flex;
   justify-content: space-around;
   height: 643px;
   padding: 86px 70px;
@@ -80,7 +83,6 @@ header {
 }
 
 .header-section-title {
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
@@ -108,7 +110,6 @@ header {
 
 /* Init my main section with content. This is title zone */
 .section-header-main {
-  display: flex;
   align-items: center;
   justify-content: center;
   color: #ffffff;
@@ -134,7 +135,6 @@ header {
 }
 
 .section-benefist {
-  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -152,7 +152,6 @@ header {
 }
 
 .title-card-benefist {
-  display: flex;
   align-items: center;
   color: #323851;
   font-weight: 700;
@@ -162,7 +161,6 @@ header {
 }
 
 .card-number-benefist {
-  display: flex;
   justify-content: center;
   align-items: center;
   color: #ffffff;
@@ -186,7 +184,6 @@ header {
 }
 
 .best-of-the-month {
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -203,7 +200,6 @@ header {
 }
 
 .container-cards-profile {
-  display: flex;
   justify-content: space-between;
   align-items: center;
   align-content: center;
@@ -217,7 +213,6 @@ header {
 }
 
 .card-avatar-profile {
-  display: flex;
   justify-content: center;
   margin-top: -35px;
   width: 100%;
@@ -244,7 +239,6 @@ header {
 /*  Label of best teams is a footer section in "Best of the month".
     Is a box with button say "Go for it" */
 .label-best-teams {
-  display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 60px 0;
@@ -262,7 +256,6 @@ header {
 
 /* Footer section in columns it is manage with flex for positioned elements in row or columns. */
 .footer-container {
-  display: flex;
   justify-content: space-between;
   align-items: center;
   align-content: center;
@@ -273,7 +266,6 @@ header {
 }
 
 .branding-footer {
-  display: flex;
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
@@ -282,7 +274,6 @@ header {
 }
 
 .social-links {
-  display: flex;
   justify-content: space-between;
   font-size: 25px;
   width: 100%;
@@ -293,13 +284,11 @@ header {
 }
 
 .footer-links {
-  display: flex;
   justify-content: space-between;
   width: 400px;
 }
 
 .footer-links-column ul {
-  display: flex;
   flex-direction: column;
   list-style: none;
 }
@@ -340,7 +329,6 @@ header {
 
 /* Finally I edit styles for paragraph tag copyright in footer */
 .copyright {
-  display: flex;
   justify-content: flex-end;
   justify-self: flex-end;
   width: 100%;
@@ -398,10 +386,7 @@ header {
     padding: 0 50px;
   }
 
-  header button {
-    display: none;
-  }
-
+  header button,
   .navbar-top {
     display: none;
   }
@@ -536,7 +521,6 @@ header {
   }
 
   .footer-form form {
-    display: flex;
     justify-content: center;
   }
 
@@ -545,17 +529,9 @@ header {
   }
 
   .copyright {
-    display: flex;
     justify-content: center;
     width: 100%;
     order: 0;
     margin: 45px 0 50px 0;
-  }
-
-  .copyright p {
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 18px;
-    color: #8c8c94;
   }
 }
